@@ -1,0 +1,39 @@
+﻿add_namespace = Afghan
+
+country_event = {
+	id = Afghan.1 
+	title = Afghan.1.t
+	desc = Afghan.1.d
+	picture = GFX_report_event_AFG_Dost_Muhammad_Khan_Death
+	
+	fire_only_once = yes
+		
+	trigger = {
+		tag = AFG
+		has_government = autocracy
+		date > 1863.6.6
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = Afghan.1.a
+		ai_chance = { 
+            factor = 100 
+        }
+		
+			AFG = {
+				kill_country_leader = yes
+                create_country_leader = {
+                    name = "Sher Ali Khan"
+                    desc = "POLITICS_TEMP_DESC"
+                    picture = "Portrait_AFG_Sher_Ali.dds"
+                    expire = 1875.08.03
+                    ideology = despotism 
+                }
+				
+			}
+	}
+	
